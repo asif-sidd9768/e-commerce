@@ -1,0 +1,37 @@
+.product-container {
+  background-color:rgb(245, 243, 236);
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 10px rgb(202, 200, 200);
+}
+
+.product-link {
+  text-decoration: none;
+  color: black;
+}
+
+.divider {
+  color: rgb(185, 183, 183);
+  margin: 0.7rem 0 0 0;
+}
+
+.product-title {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.product-price {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 1rem 0 0.5rem 0;
+  font-weight:500;
+}
+
+.product-image {
+  width: 200px;
+  height: 250px;
+  border-radius: 1rem;
+}

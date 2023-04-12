@@ -1,0 +1,22 @@
+.filter-by-price-container {
+  padding: 1rem 1rem 2rem 1rem;
+  border-radius: 1rem;
+  background-color: #e9e7df;
+}
+
+.filter-by-price {
+  margin: 0.5rem 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.filter-price-heading {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.select-dropdown {
+  width: 90%;
+  padding: 0.7rem;
+  outline-color: #e9e7df;
+  cursor: pointer;
+}

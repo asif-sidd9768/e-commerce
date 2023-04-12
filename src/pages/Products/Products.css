@@ -1,0 +1,18 @@
+.products-container {
+  display: flex;
+  padding: 1rem;
+}
+
+.sidebar {
+  width: 20%;
+  margin: 0.5rem;
+  border-radius: 1rem;
+}
+
+.main-content {
+  width: 80%;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 2px 2px 10px gray;
+}

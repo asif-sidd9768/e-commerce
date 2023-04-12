@@ -1,0 +1,85 @@
+.cart-list-summary-container {
+  background-color: #202030;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+.cart-list-summary-title {
+  font-size: 1.4rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cart-list-summary-items-price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+
+.cart-list-summary-items-price {
+  font-size: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cart-list-summary-items-total {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cart-list-summary-items-total-price {
+  font-size: 1.3rem;
+}
+
+.checkout-btn-container {
+  margin: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.checkout-btn {
+  width: 90%;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: beige;
+  border-color: #202030;
+  font-size: 1.1rem;
+  box-shadow: 2px 2px 10px #202030;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.checkout-btn:disabled,
+.checkout-btn[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.checkout-btn:hover:enabled {
+  background-color: #61617a;
+  color: beige;
+}
+
+.loader {
+  margin: 1rem;
+  border: 8px solid #a33e3e;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

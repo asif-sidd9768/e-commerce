@@ -1,0 +1,12 @@
+.cart-container {
+  margin: 2rem;
+  display: flex;
+}
+
+.cart-item-container{
+  width: 70%;
+}
+
+.cart-item-summ-container {
+  width: 30%;
+}

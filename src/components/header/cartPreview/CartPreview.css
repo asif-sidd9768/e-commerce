@@ -1,0 +1,52 @@
+.cart-icon {
+  position: relative;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-open {
+  background-color: #d0cbb9;
+  color:#202030;
+  padding: 0.3rem;
+  border-radius: 0.8rem;
+}
+
+.cart-item-count-text {
+  color: #202030;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.cart-item-count {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -70%;
+  right: -30%;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+}
+
+.cart-details {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0 1rem;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 350px;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  color: black;
+}

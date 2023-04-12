@@ -1,0 +1,35 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem 2rem;
+  background-color:#202030;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+  box-shadow: -2px 2px 4px gray;
+}
+
+.nav-right-side {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.nav-item {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0 0.7rem;
+}
+
+
+.nav-title {
+  font-family: 'Courier New', Courier, monospace;
+  color: #d7d3c5
+}
+
+.cart-close {
+  color: white;
+}

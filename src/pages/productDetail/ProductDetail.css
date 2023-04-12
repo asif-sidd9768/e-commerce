@@ -1,0 +1,20 @@
+.product-detail-container {
+  display: flex;
+}
+
+.images-left-side {
+  padding: 2rem;
+  width: 47%;
+}
+
+.product-detail-divider {
+  width: 2px;
+  margin: 2rem;
+  background-color: rgb(182, 185, 185);
+  height: 600px;
+}
+
+.details-right-side {
+  padding: 2rem;
+  width: 47%;
+}

@@ -1,0 +1,16 @@
+.filter-by-price-container {
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #e9e7df;
+}
+
+.filter-by-price {
+  margin: 0.5rem 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.filter-price-heading {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}

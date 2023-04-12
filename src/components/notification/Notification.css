@@ -1,0 +1,30 @@
+.notification-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.notification-text {
+  text-align: center;
+}
+
+.notification-bg-success {
+  background-color: rgb(32, 77, 32);
+  width: 400px;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: rgb(242, 242, 233);
+}
+
+.notification-bg-error {
+  background-color: rgb(139, 61, 35);
+  width: 400px;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: rgb(242, 242, 233);
+}
+
+.notification-text {
+  font-size: 1.2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

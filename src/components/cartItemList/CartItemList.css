@@ -1,0 +1,67 @@
+.cart-list-item-container{
+  margin-right: 1rem;
+}
+
+.cart-list-products {
+  border: 1px solid gray;
+  margin: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.cart-list-item-image {
+  display: flex;
+  align-items: center;
+}
+
+.cart-list-item-name {
+  margin: 1rem;
+  font-size: 1.7rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-text {
+  padding: 0.7rem;
+}
+
+.cart-list-price-and-quantity {
+  display: flex;
+  align-items: center;
+}
+
+.cart-list-item-price {
+  font-size: larger;
+  font-weight: 500;
+}
+
+.cart-list-item-multiplier {
+  margin: 0.7rem;
+}
+
+.cart-list-item-thumbnail {
+  width:80px; 
+  height:100px; 
+  border-radius:1rem;
+  margin-left:1rem;
+}
+
+.cart-list-item-remove-icon {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: red;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.cart-list-item-remove-icon:hover {
+  color: rgb(80, 5, 5);
+  font-size: 1.6rem;
+}
