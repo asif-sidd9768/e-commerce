@@ -10,6 +10,12 @@ export const ProductList = () => {
   const { products, filterValue, sortValue, categoryValue } = useContext(ProductContext)
   const filteredProducts = filteredProductsHelper(products, filterValue, sortValue, categoryValue)
 
+  if(products.length === 0){
+    return <div className="empty-product-list">
+        <div className="loader-main"></div>
+      </div>
+  }
+
   if(filteredProducts.length === 0){
     return <div className="empty-product-list">
         <h3 className="empty-product-list-oops">Oops!</h3>

@@ -1,8 +1,30 @@
 
 .cart-details-table {
   width: 100%;
+  padding: 10px;
+}
+
+.cart-details-table, td {
+  padding: 15px 0 10px 0;
 }
 
 th:nth-child(2n+1) {
-  border: 2px solid gray;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.cart-details-table-product-header{
+  background-color: #333333;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  border: none
+}
+
+.cart-details-table-total-header {
+  background-color: #333333;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  border: none
 }

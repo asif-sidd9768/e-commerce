@@ -7,7 +7,6 @@ export function Cart() {
     <div>
       {cart.length === 0 && <h2> Cart empty. Why don't you buy something </h2>}
       {cart.map(({ id, name, price, quantity, isItemInCart }, index) => {
-        console.log(isItemInCart);
         return (
           <div
             key={index}

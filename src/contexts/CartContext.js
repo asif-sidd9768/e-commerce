@@ -27,7 +27,6 @@ export const CartProvider = ({ children }) => {
   };
 
   const addOrUpdateProduct = (itemToAdd) => {
-    console.log(cart);
     const updatedItems = cart.find(({ id }) => id === itemToAdd.id)
       ? cart.map((item) =>
           item.id === itemToAdd.id

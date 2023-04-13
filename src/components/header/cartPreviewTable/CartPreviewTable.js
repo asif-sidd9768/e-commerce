@@ -4,9 +4,9 @@ export const CartPreviewTable = ({cart}) => {
   return (
     <table className="cart-details-table">
       <tr>
-        <th>Product</th>
+        <th className="cart-details-table-product-header">Product</th>
         <th></th>
-        <th>Total</th>
+        <th className="cart-details-table-total-header">Total</th>
       </tr>
       {
         cart.map(({id, name, quantity, price}) =>                       

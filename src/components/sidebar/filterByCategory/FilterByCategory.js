@@ -14,8 +14,8 @@ export const FilterByCategory = () => {
       <div>
         <select className="select-dropdown" onChange={handleCategory}>
           {
-            ['All', ...totalCategories].map((category) => 
-              <option value={category}>{category}</option>
+            ['All', ...totalCategories].map((category, index) => 
+              <option key={index} value={category}>{category}</option>
             )
           }
         </select>

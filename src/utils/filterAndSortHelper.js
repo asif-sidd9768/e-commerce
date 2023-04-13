@@ -1,3 +1,5 @@
+import { products } from "../products/productsDB"
+
 export const filterByValueHelper = (products, filterValue) => {
   const filtered = (filterValue === "All") ? 
     products : 
@@ -17,8 +19,13 @@ export const sortByPriceHelper = (products, sortValue) => {
   return sortedProducts
 }
 
+export const  filterByCategory = (products, categoryValue) => {
+  const filtered = categoryValue === "All" ? products : products.filter(({category}) => category === categoryValue)
+  return filtered
+}
+
 export const filteredProductsHelper = (products, filterValue, sortValue, categoryValue) => {
-  let filteredProducts
+  let filteredProducts = [...products]
   if(filterValue){
     filteredProducts = filterByValueHelper(products, filterValue)
   }
@@ -27,7 +34,7 @@ export const filteredProductsHelper = (products, filterValue, sortValue, categor
   }
 
   if(categoryValue){
-    filteredProducts = categoryValue === "All" ? filteredProducts : filteredProducts.filter(({category}) => category === categoryValue)
+    filteredProducts = filterByCategory(filteredProducts, categoryValue)
   }
 
   if(!filterValue && !sortValue && !categoryValue){

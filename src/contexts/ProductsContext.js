@@ -1,9 +1,10 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { products as productsData } from "../products/productsDB";
+import { getProducts } from "../services/fetchProducts";
 export const ProductContext = createContext();
 
 export const ProductProvider = ({ children }) => {
-  const [products, setProducts] = useState(productsData);
+  const [products, setProducts] = useState([]);
   const [filterValue, setFilterValue] = useState("");
   const [sortValue, setSortValue] = useState("");
   const [categoryValue, setCategoryValue] = useState("")
@@ -45,6 +46,15 @@ export const ProductProvider = ({ children }) => {
   const filterByCategory = (category) => {
     setCategoryValue(category)
   }
+
+  useEffect(() => {
+    const loadProducts = async () => {
+      const productsData = await getProducts()
+      setProducts(productsData)
+    }
+    loadProducts()
+  }, [])
+
   return (
     <ProductContext.Provider
       value={{
