@@ -10,7 +10,6 @@ export const FilterByPrice = () => {
     setSelected(event.target.value)
     filterByPrice(event.target.value)
   }
-  console.log('seelcted == ', selected, filterValue)
 
   return (
     <div className="filter-by-price-container">

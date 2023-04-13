@@ -9,9 +9,13 @@ import { ProductDetailContent } from "../../components/productDetailContent/Prod
 
 export const ProductDetail = () => {
   const { productId } = useParams();
-  const { products } = useContext(ProductContext);
+  const { products } = useContext(ProductContext)
+
   const product = products.find(({ id }) => id === Number(productId));
-  console.log(product)
+  
+  if(!product || Object.keys(product).length === 0){
+    return <div className="loader"></div>
+  }
   return (
     <div className="product-detail-container">
       <div className="images-left-side">

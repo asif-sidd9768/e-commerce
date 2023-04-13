@@ -39,7 +39,6 @@ export const ProductProvider = ({ children }) => {
   };
 
   const sortByPrice = (sortOrder) => {
-    console.log(sortOrder);
     setSortValue(sortOrder);
   };
 
@@ -49,8 +48,14 @@ export const ProductProvider = ({ children }) => {
 
   useEffect(() => {
     const loadProducts = async () => {
-      const productsData = await getProducts()
-      setProducts(productsData)
+      const storedProducts = localStorage.getItem("products")
+      if(storedProducts){
+        setProducts(JSON.parse(storedProducts))
+      }else{
+        const productsData = await getProducts()
+        localStorage.setItem("products", JSON.stringify(productsData))
+        setProducts(productsData)
+      }
     }
     loadProducts()
   }, [])
